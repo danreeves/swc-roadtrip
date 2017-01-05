@@ -1,12 +1,30 @@
 {
-  "name": "softwarecornwall",
+  "name": "swc-roadtrip",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Dan Reeves <hey@danreev.es",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danreeves/swc-roadtrip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danreeves/swc-roadtrip/issues"
+  },
+  "homepage": "https://github.com/danreeves/swc-roadtrip#readme",
+  "description": "",
+  "dependencies": {
+    "google-maps": "^3.2.1",
+    "haversine": "^1.0.2",
+    "lodash.chunk": "^4.2.0",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "devDependencies": {
+    "rollup": "^0.40.0",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  }
 }
